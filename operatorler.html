@@ -1,0 +1,127 @@
+<!doctype html>
+<head>
+    <meta http-equiv = "content-type" content=text/html"; charset = "utf-8">
+    <title>Deneme</title>
+</head>
+<body>
+    
+    <div id="deneme"></div>
+
+    <script type="text/javascript">
+        //inner html html dökümanı içerisinde bulunan html etiketine yada elementine etki eder veri değişimi yapar
+        // html
+        // operatorler bir veya birden fazla işi yaoabilir operand alarak iş yaparlar
+        // operatörler unary binary ve ternary olarak 3 gruba ayrılır
+        // bit işlem operatırleri
+        // unary operatorler sadece bir işlem için kullanılır atama opertörü
+        // binary operatorler mantıksal işlemler için kullanılrı.
+
+        // bit işlem operatörleri
+
+        /* 
+            Mantıksal operatörler
+
+            && ve operatörü
+            || veya operatörü
+            ! değil operatörü
+
+            Değişkenler ve değişken türleri
+
+            standart değişkenler blok kapsamlı ve sabit olarak ayrılırlar 
+
+            var ifadesi standart değişken olarak tanımlamakta kullanılır.
+
+            let ifadesi standart değil blok kapsamlı yerel değişken tanımlamakta kullanılır
+            
+            const ifadesi sabit değişken tanımlamasında kullanılmaktadır.
+
+            Değişkenlerin global ve lokal kapsam alanları 
+
+            Javascript Değişken İçeriğinin Veri Türünü Bulmak İçin typeOf operatörü kullanırız.
+
+            Javascript te eva metodu kullanımı
+
+            eval() metodu kendissine parametre olarak verilen değerleri komut gibi çalıştırır ve değeri döndürür
+
+            kendisine parametre olarak verilen değerleri javascript kodlamasına çevirerek komut gibi çalıştırır.
+
+
+
+        
+        */
+
+        var isim = "deneme";
+
+        document.writeln(typeof(isim));
+        document.getElementById('deneme').innerHTML='merhaba';
+
+        var degerbir = 10;
+
+        var degeriki = 40;
+
+        var sonuc1 = "degerbir + degeriki";
+
+        document.writeln(eval(sonuc1));
+
+        var deneme = function () {
+            document.writeln("denemefonk");
+        }
+
+        eval("deneme()");
+
+        /*
+            Javascript Trim Metodu Kullanımı 
+            Trim metodu değişkenin boşluklarını temizlemek için kullanılır.
+        */
+
+        var metin = "asdsa  "
+
+        var metin2 = "ufuk"
+
+        document.writeln(metin.trim() + metin2);
+
+         /*
+            Javascript Slice Metodu Kullanımı 
+            Slice metodu kendisine varilecek değişken aralığında değerleri kopyalar ve yeni bir içerik döndürür.
+        */
+
+        var icerik = "volkan ahmet Deneme Mehmet Kevser Ankara polatlı";
+
+        document.writeln(icerik);
+
+
+
+        document.writeln("</br>" + icerik.slice(1,7))
+
+
+/*
+            Javascript Substring Metodu Kullanımı 
+            Substring metodu biraz daha farklıdır kendisine verilecek 
+            olan değişken içeriği aralıgında değrleri kopyalar ve geri döndürür
+        */
+
+        /*
+            Javascript substr Metodu Kullanımı 
+            substr metodu 
+        */
+        var metn = "volkan ahmet Deneme Mehmet Kevser Ankara polatlı";
+
+        document.writeln(metn.substr(11,5));
+            // substr metodu eksi parametre de alabilmektedir...
+
+
+             /*
+            Javascript repeat Metodu Kullanımı 
+
+            içeriği tekrar eder yeni bir içerik oluşturur ve geriye döndürür.
+        */
+
+        var asd = "volkanankara";
+
+        document.writeln(asd.repeat(2));
+
+        // repeat metodu ilgili değişkenin içeriğini n kez kopyalar x.repeat(n) şeklinde kullanımı vardır.
+
+    </script>
+</body>
+</html>

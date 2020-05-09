@@ -1,0 +1,52 @@
+<!doctype html>
+<head>
+    <meta http-equiv = "content-type" content=text/html"; charset = "utf-8">
+    <title>Deneme</title>
+</head>
+<body>
+    
+    <div id="deneme"></div>
+
+    <script type="text/javascript">
+       // replace() metodu  : kendisine verilen parametreler doğrultusunda değişken içeriğini arar ve yeni bir içerik oluşturur değiştirir ve döndürür.
+
+       // değişken içeriğini kontrol ve eşleşen ifadelerin değişimini sağlayarak yni bir içerik oluşturur..
+
+       // ve oluşturduğu içeriği geriye döndürür..
+
+       // replace metodu düzenli ifade de alabilmektedir..
+
+       var metin = "Dünyada en yaygın olarak kullanılan script dili php dir.";
+
+       document.write(metin + "<br/>");
+
+
+       var sonuc  = metin.replace("php" , "javascript");
+
+       document.write(sonuc + "<br/>");
+
+
+       document.write(metin + "<br/>");
+
+
+       // //
+
+
+       var metinIkı = "php php  php php php php Javascript";
+       var sonucIkı  = metinIkı.replace("php" , "javascript");
+
+       document.write(sonucIkı + "</br>");
+
+    //replace metodu ilk eşleşeni değiştiri hepsini değiştirmek için içeriğin tamamını al işlm yap için düzenli ifade kullanmalıyız..
+
+    var sonucUc = metinIkı.replace(/php/gi, "javascript");
+
+    document.write(sonucUc + "</br>"); // tamamını değiştirir. // g içeriğin tamamnını üzerin de çalışılmasını sağlar
+
+
+
+       
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<head>
+    <meta http-equiv = "content-type" content=text/html"; charset = "utf-8">
+    <title>Deneme</title>
+</head>
+<body>
+    
+    <div id="deneme"></div>
+
+    <script type="text/javascript">
+       // match() kendisine parametre olarak verilen değer(ler) doğrultusuna değişken içeriğini kontrol eder ve eşleşen kısmından 
+       // yeni bir içerik oluşturur  ve oluşturuğu içeriği geriye döndürür.
+
+       // bir özelliği aha vardır regex özelliğidir düzenli ifadeler de alabilmektedirler..
+
+        var variable = "ankara polatlı deneme metin";
+
+        document.write(variable + "</br>");
+
+
+        var sonuc  = variable.match("deneme");
+        document.write(sonuc + "</br>");
+
+        // match metoduna eşleşen olmazsa geriye null değer döndürür.
+
+        //var sonucIkı = sonuc.match("Javascript");
+
+        //document.write(sonucIkı + "</br>");
+
+        // g düzenli ifadesi içeriğin tamamı üzerinde çalışmasını sağlar. düzenli ifadedir..
+
+        // i içeriğin büyük harf küçük harf bakılmaksızın aranmasını sağlar.
+
+        var metin = "ankara Javascript polatlı deneme metin - Javascript A dan Z ye";
+
+
+
+        var sonucUc = metin.match(/JavascripT/ig);
+
+        document.write(sonucUc + "</br>");
+        // regex te i büyük harf küçük harf aramaz ve g de tüm metinde match ile arama yapar
+
+
+    
+    </script>
+</body>
+</html>

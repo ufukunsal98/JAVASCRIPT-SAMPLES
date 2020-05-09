@@ -1,0 +1,61 @@
+<!doctype html>
+<head>
+    <meta http-equiv = "content-type" content=text/html"; charset = "utf-8">
+    <title>Deneme</title>
+</head>
+<body>
+    
+    <div id="deneme"></div>
+
+    <script type="text/javascript">
+       // encod-uri-method() değişken içerisindeki metnin özel karakterlerini uf8 (unicode dönüşüm formatı) kodlamasına dönüşürerek oluştuduğu değeri geriye döndürür.
+   
+    // decodeURI method değişken içerisindeki metnin özel karakterlerinin utf8 haline dönüştürülmüş kodlamalarının çözülmüş hallerini geri eski hale getirilmesini sağlamaktadır.
+
+   /*
+        kodlamaya dahil edilmeyen karakterler.
+
+        0 1 2 3 4 5 6 7 8 
+
+        a b c d e f g h u ü v y z s x y z
+
+        A B C D E F G  H  ...
+
+
+
+   */
+   var deger = "http://www.google.com.tr?egitimsetiadi= aslkjasdlk&eğğğğitmen=ufukunsal";
+
+    var sonuc = encodeURI(deger);
+    document.write(sonuc  + "</br>");
+    // ilgili link veya değerlerin utf 8 dönüşümü amacıyla kullanılır utf 8 dönüştürülmesi amacıyla encodeUri kullanırırz
+
+        /*
+            Kodlamaya dahil edilmeyen karakterler
+
+            0 1 2 3 4 5 6  7 8 9 
+
+            A B C D E F G H I J K L M N O P R S T U V Y Z
+
+            a b c d e f g h ı j k l m n o p r s t u v y z
+
+    
+
+    Kodlamaya dahil edilmeyen karakterler:
+0 1 2 3 4 5 6 7 8 9
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+; : / ? @ & = + $ , # - _ . ! * ' ~ ( )
+        */
+        var sonucIkı = decodeURI(sonuc);
+
+        document.write(sonucIkı);
+
+        // bu işlem genellikler apilerde web servislerde diğer yazılım veya program formatında ngelen verileri alırken utf çözümleme işlemlerinde kullanılabiliyor.
+
+        // javascript ile çalışırken bize gelmiş değer utf 8 halinde geliyorsa ve esas değerleri almamız gerekiyorsa decodeUrı metidonu kullanabiliriz.
+
+    
+    </script>
+</body>
+</html>
