@@ -1,0 +1,39 @@
+<!doctype html>
+<head>
+    <meta http-equiv = "content-type" content=text/html"; charset = "utf-8">
+    <title>Deneme</title>
+</head>
+<body>
+    
+    <div id="deneme"></div>
+
+    <script type="text/javascript">
+       // continue : dönünün o anki işlemini sonlandırarak kaldığı yerden devam ederek başa döner o anki alt kodları çalıştırmaz....
+
+
+
+
+        var deger = 1;
+
+        while(deger <= 10) {
+            if(deger == 4) {
+                deger++; // deger 4 te takılı kalıyo artırmamız lazım..
+                continue;
+            }
+            document.write(deger + "</br>");
+            deger++;
+        }
+
+        var dizi = ["Sarı" , "Mavi" , "Beyaz" , "Yesil" , "Siyah" , "Kırmızı" , "Kahvrengi"];
+
+        for(item in dizi) {
+            if(dizi[item] == "Mavi") {
+                continue;
+            }
+            document.write(dizi[item] + "</br>");
+        }
+
+    
+    </script>
+</body>
+</html>

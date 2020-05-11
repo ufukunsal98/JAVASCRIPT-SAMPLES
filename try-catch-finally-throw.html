@@ -1,0 +1,48 @@
+<!doctype html>
+<head>
+    <meta http-equiv = "content-type" content=text/html"; charset = "utf-8">
+    <title>Deneme</title>
+</head>
+<body>
+    
+    <div id="deneme"></div>
+
+    <script type="text/javascript">
+       // try - catch - finally ve throw hata denetimleri
+
+       // eğer hata oluşursa bunu kontrolünde kullanılır..
+
+
+       // try : hata oluşabilicek kod blokları için kullanılır.
+       
+       // catch : hat oluştuğunda çalışacak kodlar için kullanılır.
+
+       //finally  : her türlü çalışır hata oluşsa da oluşmasa da çalışır...
+       
+       //throw : hata oluşturabilecek kodlar için istisnai durumlarda kullanılır..
+
+       try { // yazılımsal olarak oluşan hata denetimlerini yapmaktadır..
+        var isim = "volkan";
+
+        throw("Değişken tanımlama hatası soy isim adındaki değişken yok...");
+        document.write(isim  + "</br>");
+
+        document.write(soyisim  + "</br>");
+
+       }
+       catch(err) {
+            document.write("hata oluştu soyisim bulunamamış olabilir.."  + "</br>");
+            document.write("hata mesajı : " + err  + "</br>");
+       }
+
+       // hata oluşmazsa veya hata oluşsada çalıştırılacak kodlar nereye yazılmalı finally fadesi bunun için vardır..
+
+       finally{ // hata olsa da olmasa da çalışır..
+            document.write("hata olsa da olmasa da burası çalışacaktır..."  +"</br>");
+       }
+
+
+    
+    </script>
+</body>
+</html>

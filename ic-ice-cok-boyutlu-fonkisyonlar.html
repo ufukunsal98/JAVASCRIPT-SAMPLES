@@ -1,0 +1,87 @@
+<!doctype html>
+<head>
+    <meta http-equiv = "content-type" content=text/html"; charset = "utf-8">
+    <title>Deneme</title>
+</head>
+<body>
+    
+    <div id="deneme"></div>
+
+    <script type="text/javascript">
+       
+       // İç İçe Fonksiyon Tanımlama
+
+       // Çok Boyutlu Fonkisyon Yapısı
+
+       function deneme(parametre1 , parametre2) { // deneme fonksiyonu çalıştığında deneme2 nasıl çalışıyor
+
+            function test(son1 , son2) {
+               document.write("asdasd" + "</br>");
+               return son1 + son2;
+           }
+
+           // var sonuc = test(parametre1 , parametre2);
+
+           // document.write(sonuc);
+
+           return test(parametre1 , parametre2);
+       }
+
+       var sonuc = deneme(3 , 6);
+
+       document.write(sonuc);
+
+
+       // iç içe çok boyutlu fonksiyonlar  parametre tanımlama dışarıdan ayrı ayrı parametreler tanımlama ve gönderme
+
+       document.write("<br/> <br/><br/> İç içe çok boyutlu fonk deneme </br>");
+
+       function bir(a) {
+
+           function iki(b) {
+        
+            function uc(c) {
+                   document.write( a + b + c + "</br>");
+
+                   return a + b + c; 
+               }
+            return uc;   
+            }
+
+            return iki;
+       }
+
+       var sonuc  = bir(5)(10)(7); // bir fonksiyonuna bes parametresi gitti iki ye 10 parametresi gider uc fonksiyonuna 7 parametresi gidiyor
+
+       document.write(sonuc + "</br>");
+
+
+       // çok boyutlu ofnksiyon denemesi 2
+
+       function bir(a1 , a2) {
+           
+        function iki (b1 , b2) {
+            
+            function uc(c1 , c2) {
+
+                   return a1 + a2 + b1 +b2 + c1 + c2;
+               }
+               return uc;
+           }
+           return iki;
+       }
+
+       var yeniSonuc = bir(10,15)(15,20)(25,45);
+
+       document.write(yeniSonuc + "</br>");
+
+
+
+    
+
+
+
+    
+    </script>
+</body>
+</html>

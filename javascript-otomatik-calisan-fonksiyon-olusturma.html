@@ -1,0 +1,31 @@
+<!doctype html>
+<head>
+    <meta http-equiv = "content-type" content=text/html"; charset = "utf-8">
+    <title>Deneme</title>
+</head>
+<body>
+    
+    <div id="deneme"></div>
+
+    <script type="text/javascript">
+
+        (function test(params) {
+            document.write("merhaba" + "</br>");
+        })();
+
+        // bu fonksiyonu otomatik olarak çalıştırmak için sadece bir parantez kullanarak yapılabilir...
+
+
+        (function test(params) {
+            document.write("test" + "<br>");
+        })(); // otomatik çalışan fonksiyon oluşturmak için kullanılır...
+
+        var parametreliFonk = function (params) {
+            document.write("parametrelifonk denemesi" + "<br>");
+
+        }(); // () fonksiyonun otomatik olarak çalışmasını sağlamaktadır...
+
+        // burda sadece parantez ekleyere kfonksiyonun otomatik olarak çalışmasını sağlayabiliriz...
+    </script>
+</body>
+</html>

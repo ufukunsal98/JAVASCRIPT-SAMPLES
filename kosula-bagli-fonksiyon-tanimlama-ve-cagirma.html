@@ -1,0 +1,70 @@
+<!doctype html>
+<head>
+    <meta http-equiv = "content-type" content=text/html"; charset = "utf-8">
+    <title>Deneme</title>
+</head>
+<body>
+    
+    <div id="deneme"></div>
+
+    <script type="text/javascript">
+       // KOSULA BAGLİ OLARAK FONKSİYON TANİMLAMA V CAGİRMA HTML.
+
+        // BAZEN AYNI FONKSİYON İSMİ KULLANMAMIZ GEREKEBİLİYOR BU DURUMDA KULLANIRIZ..
+
+
+        //function test(params) {
+        //    document.write("renk siyah kırmızı mavi beyaz turuncu kahverengi" + "</br>");    
+        //}
+
+       // function test(params) {
+        //    document.write("ankara polatlı izmir didim" + "</br>");    
+        //}
+
+        //test(); // alttakini çağırır bu yanlış bir yapıdır bunu çözmek için koşul yapılarını kullanırız...
+
+
+        // bu hatadan kurtulmak için
+
+
+        var deger = "Meyveler";
+
+        // javascript koşula bağlı fonkisyon tanımlama yapısı 
+
+
+        
+        if(deger == "Renkler") {
+            function test(params) {
+            document.write("renk siyah kırmızı mavi beyaz turuncu kahverengi" + "</br>");    
+            }
+        } else if (deger == "Sehirler") {
+            function test(params) {
+            document.write("ankara polatlı izmir didim" + "</br>");    
+            }
+
+        }
+
+        else if (deger == "Meyveler") {
+            function test(params) {
+            document.write("muz elma armut ayva kiraz" + "</br>");    
+            }
+
+        }
+
+        else  {
+            function test(params) {
+            document.write("ıspanak pırasa kabak enginar" + "</br>");    
+            }
+
+        } 
+
+        test();
+
+
+
+
+
+    
+    </script>
+</body>
+</html>

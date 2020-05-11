@@ -1,0 +1,109 @@
+<!doctype html>
+<head>
+    <meta http-equiv = "content-type" content=text/html"; charset = "utf-8">
+    <title>Deneme</title>
+</head>
+<body>
+    
+    <div id="deneme"></div>
+
+    <script type="text/javascript">
+       // loops - döngüler : Döngüler birden çok kez tekrarlanarak çalışması için kullanırız...
+
+       // while döngüsü - > 
+
+       /*
+       
+       while( kosul ifadesi gecerli oldugu müddetce calisir) { // sarti yanlis yazarsak sürekli sonlanmadan calisir döngu
+
+        }
+
+        
+       
+        */
+
+        var baslangic = 0;
+        
+        while(baslangic <= 10) {
+            document.write(baslangic + "</br>");
+            baslangic++;
+        }
+
+
+        /*
+            do while döngüsü 
+
+            do { // döngu islemini burdan baslatiriz...
+                kodlamalar buraya yapılmalıdır.
+             .............................   
+            
+            }while(kosul) {
+
+            }
+        */
+
+        var deger  = 1;
+
+        do {
+            // document.write(deger + "</br>");
+            deger++;
+        } while(deger <= 50)
+            
+
+         /*
+            do while döngüsü 
+
+            do { // döngu islemini burdan baslatiriz...
+                kodlamalar buraya yapılmalıdır.
+             .............................   
+            
+            }while(kosul) {
+
+            }
+        */
+
+        /*
+            for döngüsü 
+
+        for(1. parametre , 2. parametre , 3.parametre){
+
+        }
+
+        1. parametre döngünün başlangıç değeri
+
+        2. parametre döngünün koşul değeri
+
+        3 parametre artırma yada eksiltme değeri
+            
+        */
+
+
+        document.write("for dongusu " + "</br>" + 
+        "---------------------------------------</br>");
+
+        for(var deger = 1; deger < 50 ; deger++){
+           // document.write(deger + "</br>");
+        }
+
+
+         /*
+            for in  döngüsü  nesneler ve diziler için kullanılmaktadır..
+
+            for (1 parametre değişkendir *** in *** dizi veya nesneAdi (itere edilebilir dizi veya nesne)) {
+
+            }
+            
+        */
+
+        var ornek = ["Volkan"  , "Hakan" , "Onur" , "Ümit"];
+
+        document.write(ornek + "</br>");
+
+
+        for(sonuc in ornek) { // sonuc burda indistir..
+            document.write(ornek[sonuc] +" indis değeridir sonuc" + sonuc + "</br>");
+        }
+    
+    </script>
+</body>
+</html>

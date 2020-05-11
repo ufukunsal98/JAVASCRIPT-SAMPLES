@@ -1,0 +1,42 @@
+<!doctype html>
+<head>
+    <meta http-equiv = "content-type" content=text/html"; charset = "utf-8">
+    <title>Deneme</title>
+</head>
+<body>
+    
+    <div id="deneme"></div>
+
+    <script type="text/javascript">
+
+        // ic ice fonksiyonlar alt fonk değer değiştirme parametre değiştirme
+        function deneme() {
+            var deger = "ornek";
+            function sonuc(deger) {
+                document.write(deger + "</br>");
+            }
+
+            return sonuc(deger);
+        
+        }
+
+         // deneme()(5);
+
+        // İç içe çok boyutlu fonkisyonlarda alt fonksiyonan paranetre değerini alma ve çağırma
+
+
+        function demo1(deger) {
+
+            function test1 () {
+                document.write(deger + "</br>");
+            }
+
+            return test1;
+
+        }
+
+        demo1("degerBir")();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<head>
+    <meta http-equiv = "content-type" content=text/html"; charset = "utf-8">
+    <title>Deneme</title>
+</head>
+<body>
+    
+    <div id="deneme"></div>
+
+    <script type="text/javascript">
+    
+        // caller özelliği 
+
+        // caller : caller özelliği - fonksiyonu çağıran diğer bir fonksiyon referans olarak alınarak tüm bilgilerinin ele edilmesi sağlanır ...
+
+        // fonksiyonu çapıran fonksiton referans olarak  alınaraka tüm bilgilerinin elde edilmesi sağlanır...
+
+
+        function esas () {
+            document.write("esas fonksiyon" + "<br/>");
+            // esas içinde caller özelliğini kullanarak diger yani çağıranın parametrelerine bilgilerine erişebiliriz...
+
+            for(var bas = 0; bas < esas.caller.arguments.length; bas++) { // esas.caller kendisini cagiran fonk a ulastik
+                document.write(esas.caller.arguments[bas] + "<br/>");
+            }
+            
+           
+
+        }
+
+        function diger(isim , soyisim) {
+            document.write("diger fonksiyon" + "</br>");
+
+            esas();
+        }
+
+        diger("deger1" , "deger2");
+
+
+
+        
+
+    
+    
+    </script>
+</body>
+</html>

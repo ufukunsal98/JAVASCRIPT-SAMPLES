@@ -1,0 +1,58 @@
+<!doctype html>
+<head>
+    <meta http-equiv = "content-type" content=text/html"; charset = "utf-8">
+    <title>Deneme</title>
+</head>
+<body>
+    
+    <div id="deneme"></div>
+
+    <script type="text/javascript">
+       /*
+        Fonksiyonlar 
+
+
+
+       */
+
+      var kisi = function () {
+        var isim = "ufuk remzi";
+
+        var soyisim = "ünsal";
+
+        document.write( isim + " " +soyisim + "</br>");
+      }
+
+      var sonuc = kisi();
+
+
+
+      // return ifadesi içerisinde fonksiyon tanımlaması yapabiliriz...
+
+
+      var kisiNew = function () {
+        var isim = "ufuk remzi";
+
+        var soyisim = "ünsal";
+
+        return {
+            isimGetir: function() {
+                return isim + " " + soyisim;
+            },
+
+            isimDegistir: function(yeniİsim) {
+                isim = yeniİsim;
+            }
+        }
+      }();
+
+      
+      kisiNew.isimDegistir("isimHali");
+      var sonucNew = kisiNew.isimGetir();
+
+      document.write(sonucNew);
+
+    
+    </script>
+</body>
+</html>

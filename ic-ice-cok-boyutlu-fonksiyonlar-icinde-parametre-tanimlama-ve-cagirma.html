@@ -1,0 +1,40 @@
+<!doctype html>
+<head>
+    <meta http-equiv = "content-type" content=text/html"; charset = "utf-8">
+    <title>Deneme</title>
+</head>
+<body>
+    
+    <div id="deneme"></div>
+
+    <script type="text/javascript">
+
+
+        // ic ice cok boyutlu fonksiyonları kullanırken fonkisyonlar icerisinde parametre tanımlamak nasıl olur : 
+
+
+            function bir(aaa) {
+
+                function iki(bbb) {
+                    uc(7);
+                    function uc(ccc) {
+                        dort(4);
+                        function dort(ddd) {
+
+                            var sonuc  = aaa + bbb + ccc + ddd;
+
+                            document.write(sonuc  +"</br>");
+
+                            document.write(ddd  +"</br>");
+                        }
+                    }
+                }
+
+                iki(8);
+            }
+
+            bir(5);
+
+    </script>
+</body>
+</html>

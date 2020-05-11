@@ -1,0 +1,61 @@
+<!doctype html>
+<head>
+    <meta http-equiv = "content-type" content=text/html"; charset = "utf-8">
+    <title>Deneme</title>
+</head>
+<body>
+    
+    <div id="deneme"></div>
+
+    <script type="text/javascript">
+       // 
+
+       (function test(parametre1 , parametre2) {
+          document.write("Test" + "<br/>");
+
+          document.write(parametre1, parametre2 + "<br/>");
+       })(1 , 2);
+
+
+
+       // ikinci yöntem
+
+       var demo = function (parametre1 , parametre2) {
+           
+            document.write(parametre1 + parametre2 + "<br/>");
+
+       }( 5 , 6);
+
+       var degerBir = "Ufuk Remzi";
+
+       var degerIki = "Ünsal";
+
+       var demo = function (d1 , d2) {
+           
+        document.write(d1 + " " + d2 + "<br/>");
+
+       }(degerBir , degerIki);
+
+
+
+       // OTOMATIK OLARAK ÇALISAN FONKİSYONLARA VARSAYILAN DEĞER ATAMASI NASIL YAPILIR
+
+       (function otomatikDeneme(p1 , p2 = 50) { // bu şekilde varsayılan değer ataması yapabiliriz...
+           
+        document.write(p1 + " " + p2 + "<br/>");
+
+
+       })(100);
+
+       document.write("Otomatik Deneme 2" +  "<br/>");
+
+       var otomatikDenemeNew = function (p1 , p2 = 50) {
+        document.write(p1 + " " + p2 + "<br/>");
+
+       }(100);
+
+
+    
+    </script>
+</body>
+</html>

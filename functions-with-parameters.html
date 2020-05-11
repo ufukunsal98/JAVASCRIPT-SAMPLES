@@ -1,0 +1,66 @@
+<!doctype html>
+<head>
+    <meta http-equiv = "content-type" content=text/html"; charset = "utf-8">
+    <title>Deneme</title>
+</head>
+<body>
+    
+    <div id="deneme"></div>
+
+    <script type="text/javascript">
+       // fonksiyonlar dışarıdan parametre alabilirler .
+
+       function test( a, b, c ,d) {
+           document.write( a + " " + " "  + b + " " +c + " " + d + "</br>");
+       }
+
+       test(5 , 4 , 8 ,7);
+
+
+       // fonksiyonları bu parametre kullanımı ile kullanabiliriz..
+
+       test(); // parametre göndermezsek undefined hatası alırız
+
+       var text = function (a, b, c ,d) {
+        document.write( a + " " + " "  + b + " " +c + " " + d + "</br>");
+
+       }
+
+       text(5 , 4 , 8 ,7);
+
+       var toplama = function (s1 , s2) {
+           return s1 + s2;
+       }
+
+       var sonuc = toplama(5 , 45);
+    
+
+       document.write(sonuc + "</br>");
+
+        /* DEFAULT PARAMETERS */
+
+       // fonksiyonlardaki parametrelere varsayılan değer ataması : Default Parameters :
+
+
+       // DEFAULT PARAMETERS 
+
+       function kdvHesap(tutar , kdv = 18) {
+            var kdvTutari = (tutar / 100) * kdv;
+            var netTutar =  kdvTutari + tutar;
+            document.write("Gelen Tutar : " + tutar + "</br>");
+            document.write("Toplam Tutar : " + netTutar + "</br>");
+       }
+
+       kdvHesap(1000);
+
+       
+
+
+
+
+
+
+    
+    </script>
+</body>
+</html>

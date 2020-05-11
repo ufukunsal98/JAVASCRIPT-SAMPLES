@@ -1,0 +1,68 @@
+<!doctype html>
+<head>
+    <meta http-equiv = "content-type" content=text/html"; charset = "utf-8">
+    <title>Deneme</title>
+</head>
+<body>
+    
+    <div id="deneme"></div>
+
+    <script type="text/javascript">
+       // switch case ifadeleri
+        // swith koşul başlatır
+        // koşul sonucçlarını kontrol ederiz koşul kontrolü
+
+        //break koşul kontrolü sonlandırması işlemini yapar
+
+        // default koşul olumsulukları sonucu çalışmaktadır...
+        
+        
+        /*
+            switch(kosul) { 
+                case 1:
+                    ......
+                    break;
+                case 2:
+                    .....
+                    break;    
+            }
+        */
+
+        var metin = "Javascript Eğitim seti";
+
+        var karakterSay = metin.length;
+
+        document.write(karakterSay + "</br>");
+
+        switch(karakterSay) { // karakter say uzunluğu varsa
+
+            case 1:
+                document.write("karakter uzunluğu 1 dir" + "</br>");
+                break;
+            case 2:
+                document.write("karakter uzunluğu 2 dir" + "</br>");
+                break; 
+            case 4:
+                document.write("karakter uzunluğu 4 dir" + "</br>");
+                break;        
+
+            case 6:
+                document.write("karakter uzunluğu 6 dir" + "</br>");
+                break;        
+
+            case 21: 
+                document.write("karakter uzunluğu 22 dir" + "</br>");
+                break;
+
+            default:    
+                document.write("karakter uzunluğu 21 den fazladır.." + "</br>");
+                break;
+        }
+
+
+
+
+    
+    </script>
+</body>
+</html>
